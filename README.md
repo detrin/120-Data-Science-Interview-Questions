@@ -1,4 +1,4 @@
-# 120 Data Science Interview Questions
+# 120 Data Science Interview Questions and anwers edited by Daniel Herman
 
 Here are the answers to [120 Data Science Interview Questions](http://www.datasciencequestions.com/).
 
@@ -10,4 +10,4 @@ Here are the answers to [120 Data Science Interview Questions](http://www.datasc
 - [Programming](programming.md)
 - [Statistical Inference](statistical-inference.md)
 
-Feel free to send me a pull request if you find any mistakes or have better answers.
+This is fork with my views on the questions.
