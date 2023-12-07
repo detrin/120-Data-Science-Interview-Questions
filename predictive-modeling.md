@@ -1,23 +1,23 @@
 ## Predictive Modeling (19 questions)
 #### 1. (Given a Dataset) Analyze this dataset and give me a model that can predict this response variable.
-- Start by fitting a simple model (multivariate regression, logistic regression), do some feature engineering accordingly, and then try some complicated models. Always split the dataset into train, validation, test dataset and use cross validation to check their performance.
 - Determine if the problem is classification or regression
+- Start by fitting a simple model (multivariate regression, logistic regression), do some feature engineering accordingly, and then try some complicated models. Always split the dataset into train, validation, test dataset and use cross validation to check their performance.
+- Use shap to explain the model and see if the model is reasonable.
 - Favor simple models that run quickly and you can easily explain.
-- Mention cross validation as a means to evaluate the model.
-- Plot and visualize the data.
 
 #### 2. What could be some issues if the distribution of the test data is significantly different than the distribution of the training data?
 - The model that has high training accuracy might have low test accuracy. Without further knowledge, it is hard to know which dataset represents the population data and thus the generalizability of the algorithm is hard to measure. This should be mitigated by repeated splitting of train vs test dataset (as in cross validation).
-- When there is a change in data distribution, this is called the dataset shift. If the train and test data has a different distribution, then the classifier would likely overfit to the train data.
+- When there is a change in data distribution, this is called the dataset shift. If the train and test data has a different distribution, then the classifier is probably going to perform badly on test dataset.
 - This issue can be overcome by using a more general learning method.
 - This can occur when:
-  - P(y|x) are the same but P(x) are different. (covariate shift)
-  - P(y|x) are different. (concept shift)
+  - P(y|x) are the same but P(x) are different. (covariate shift) 
+  - P(y|x) are different. (concept shift) 
 - The causes can be:
   - Training samples are obtained in a biased way. (sample selection bias)
   - Train is different from test because of temporal, spatial changes. (non-stationary environments)
 - Solution to covariate shift
   - importance weighted cv
+- Generative models are more robust to dataset shift than discriminative models.
 #### 3. What are some ways I can make my model more robust to outliers?
 - We can have regularization such as L1 or L2 to reduce variance (increase bias).
 - Changes to the algorithm:
