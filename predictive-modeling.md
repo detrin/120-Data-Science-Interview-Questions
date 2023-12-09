@@ -74,11 +74,9 @@
 - curse of dimensionality
 - adding random noise makes the model more complicated but useless
 - computational cost
-- Ask someone for more details.
 
 #### 9. Given training data on tweets and their retweets, how would you predict the number of retweets of a given tweet after 7 days after only observing 2 days worth of data?
 - Build a time series model with the training data with a seven day cycle and then use that for a new data with only 2 days data.
-- Ask someone for more details.
 - Build a regression function to estimate the number of retweets as a function of time t
 - to determine if one regression function can be built, see if there are clusters in terms of the trends in the number of retweets
 - if not, we have to add features to the regression function
@@ -87,7 +85,6 @@
 
 #### 10. How could you collect and analyze data to use social media to predict the weather?
 - We can collect social media data using twitter, Facebook, instagram API’s. Then, for example, for twitter, we can construct features from each tweet, e.g. the tweeted date, number of favorites, retweets, and of course, the features created from the tweeted content itself. Then use a multi variate time series model to predict the weather.
-- Ask someone for more details.
 
 #### 11. How would you construct a feed to show relevant content for a site that involves user interactions with items?
 - We can do so using building a recommendation engine. The easiest we can do is to show contents that are popular other users, which is still a valid strategy if for example the contents are news articles. To be more accurate, we can build a content based filtering or collaborative filtering. If there’s enough user usage data, we can try collaborative filtering and recommend contents other similar users have consumed. If there isn’t, we can recommend similar items based on vectorization of items (content based filtering).
